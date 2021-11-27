@@ -62,6 +62,23 @@
         echo "<br/>A divisao vale ".($n1/$n2);
         echo "<br/>O modulo vale ".($n1%$n2);
         echo "<br/>A média vale: ".$media;
+
+        //você pode passar valores personalizados pela URL
+        //Ex: localhost/site/index.php?a=3&b=2
+
+        $n1 = $_GET["a"];
+        $n2 = $_GET["b"];
+        $n3 = $n1 + $n2;
+        $media = ($n1 + $n2)/2;
+        echo "<br/><br/>Valores recebidos a = $n1 e b = $n2";
+        echo "<br/>O soma vale é $n3";
+        echo "<br/>A subtração vale".($n1 - $n2);
+        echo "<br/>A multiplicacao vale ".($n1*$n2);
+        echo "<br/>A divisao vale ".($n1/$n2);
+        echo "<br/>O modulo vale ".($n1%$n2);
+        echo "<br/>A média vale: ".$media;
+
+
         ?>
 
         
