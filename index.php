@@ -50,7 +50,18 @@
 
         //aspas simples
         echo '$no tem $n anos';
-            
+        echo "<br>";
+
+        $n1 = 3;
+        $n2 = 4;
+        $n3 = $n1 + $n2;
+        $media = ($n1 + $n2)/2;
+        echo "O soma vale é $n3";
+        echo "<br/>A subtração vale".($n1 - $n2);
+        echo "<br/>A multiplicacao vale ".($n1*$n2);
+        echo "<br/>A divisao vale ".($n1/$n2);
+        echo "<br/>O modulo vale ".($n1%$n2);
+        echo "<br/>A média vale: ".$media;
         ?>
 
         
