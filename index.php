@@ -78,7 +78,20 @@
         echo "<br/>O modulo vale ".($n1%$n2);
         echo "<br/>A média vale: ".$media;
 
-
+        /*operações especiais
+        abs() - valor absoluto
+        pow() - potenciação
+        sqrt() - raiz quadrada
+        round() - Arredondamento
+        intval() - valor inteiro da variável
+        number_format() - formata o valor (numero de casas decimais)
+        */
+        echo "<br/>Valor absoluto de $n1 é ".abs($v2);
+        echo "<br/>O valor de $n1<sub>$n2</sub> e ".pow($n1,$n2);
+        echo "<br/>A raiz de $n1 e ".sqrt($n1);
+        echo "<br/>O valor de $n1 arredondado e ".round($n1);//ceil e floor
+        echo "<br/>A parte inteira de $n1 é ".intval($n1)
+        echo "<br/>O formato de $n1 em moeda é RS".number_format($n1,2,",",".");
         ?>
 
         
