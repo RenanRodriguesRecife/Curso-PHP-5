@@ -23,7 +23,23 @@
     $nome = "Leonardo";
     $casado = false;
     //(coesão) O php modifica o tipo de variável deacordo com usa atribuição
-    
+    //O PHP vai fazer de tudo para não mostrar erros
+
+/*
+você pode força um tipo de variavel atribuind um typecast
+Inteiro   (int), (integer)
+REAL      (real),(float),(double)
+Caractere (string)
+Lógico    (???) - você não tem como forçar um tipo lógico 
+                 Em PHP um tipo lógico é um tipo inteiro
+                 true = 1
+                 false = vazio
+*/
+        $n = 4;
+        $no = "gustavo"
+        echo = $no
+
+        //11:00
     ?>
 
     
