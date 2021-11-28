@@ -42,6 +42,17 @@
             echo "<br> As variáveis $v1 e $v2 são ".$res1;
             $res2 = ($v1 === $v2) ? 'idênticas' : 'não idênticas';
             echo "<br> As variáveis $v1 e $v2 são ".$res2;
+
+            /*Exercício 3
+            Mostrar a situação de um aluno, de acordo com a
+            sua méida obtida*/
+            $nota1 = $_GET['n1'];
+            $nota2 = $_GET['n2'];
+            $media = ($nota1 + $nota2)/2;
+            $situacao = ($media > 7) ? 'aprovado' : 'recuperacao';
+            echo "<br> $media situação do aluno: ".$situacao;
+
+          
         ?>
 
         
