@@ -7,12 +7,13 @@
 </head>
 <body>
 <div>
+  
     <?php
     /*isset - verifica se a variável foi enviada - solução paleativa*/
 
-        $nome = $_GET['nome'];
-        $sexo = $_GET['sexo'];
-        $ano = $_GET['ano'];
+        $nome = isset($_GET['nome'])?$_GET["nome"]:"[não informado]";
+        $sexo = isset($_GET['sexo'])?$_GET["sexo"]:"[sexo não informado]";
+        $ano =  isset($_GET['ano'])?$_GET['ano'] : 0;
         $idade = date('Y') - $ano;
         echo "Nome: $nome <br> Sexo: $sexo <br> Idade: $idade";
     ?>
