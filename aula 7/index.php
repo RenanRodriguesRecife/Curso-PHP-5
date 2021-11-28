@@ -52,7 +52,20 @@
             $situacao = ($media > 7) ? 'aprovado' : 'recuperacao';
             echo "<br> $media situação do aluno: ".$situacao;
 
-          
+              /* && and
+               || or
+               xor xor
+               !   not
+            */
+            /* Exercício 4
+            Mostrar se um eleitor é obridod a votar ou não
+            */
+            
+            $ano_Nas = $_GET['nas'];
+            $idade = date("Y") - $ano_Nas;
+            echo "<br>idade: $idade";
+            $situacao = ($idade >= 18 && $idade <=64) ? 'obrigatorio': 'não obrigatorio';
+            echo "<br> Voto ".$situacao
         ?>
 
         
