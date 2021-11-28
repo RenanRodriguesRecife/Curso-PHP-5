@@ -112,6 +112,36 @@
         echo "<br> O preço com 10% de aumento ".number_format($preco,2);
         $preco*=0.9;
         echo "<br> O preço com 10% de desconto ".number_format($preco,2);
+
+        $ano =$_GET['ano'];
+        echo "<br> O ano atual é $ano o ano anterior é ".--$ano;
+
+        /* REferencia
+        $a = 3;
+        $b = $a;
+        $b += 5;
+        echo $a;
+        echo $b;
+        a = 3 e b = 8
+
+        $a = 3;
+        $b = &$a;
+        $b += 5;
+        echo $a;
+        echo $b;
+        a = 8 e b = 8
+        */
+
+        /* variáveis de variáveis
+        $site = "cursoemvideo";
+        $$site = "cursoPHP";
+        o nome da variável $$site é o mesmo que $(cursoemvideo)
+        */
+
+         
+        $site = "cursoemvideo";
+        $$site = "cursoPHP";
+        echo "<br><br> $site $cursoemvideo e ".$$site;
         ?>
 
         
