@@ -27,6 +27,7 @@
 
     
     -->
+    <h4>Exercício 01</h4>
     <!-- Exercício 01
     Ler um valor e mostrar sua raiz quadrada
 -->
@@ -34,6 +35,28 @@
         Valor: <input type="number" name="v" id="">
         <input type="submit" value="Calcular Raiz">
     </form>
+
+
+    <h4>Exercício 02</h4>
+    <!-- 
+        Exercicio 02
+        ler nome, ano de nascimento e sexo de uma pessoa,
+        mostrando sua idade atual
+    -->
+    <form method="get" action="02idade.php">
+        Nome: <input type="text" name="nome" id=""><br/>
+        Ano de Nascimento: <input type="number" name="ano" id=""><br/>
+        <fieldset><legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="masculino">
+            <label for="masc">Masculino</label><br/>
+            <input type="radio" name="sexo" id="fem" value="feminino" checked>
+            <label for="fem">Feminino</label>
+            
+        </fieldset></br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
 </div>
 </body>
 </html>
