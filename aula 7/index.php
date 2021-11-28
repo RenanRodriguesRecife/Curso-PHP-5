@@ -20,7 +20,16 @@
         <h1>testando php</h1>
 
         <?php
-
+            /*exercício 1
+            Permitir que o usuário escolha entre somar
+            e multiplicar dois números
+            */
+            $n1 = $_GET['a'];
+            $n2 = $_GET['b'];
+            $op = $_GET['op'];
+            echo "<br>S para somar e outro valor para multiplicar <br>";
+            $res = ($op == 's') ? ($n1 + $n2) : ($n1 * $n2);
+            echo "<br> Resposta: ".$res;
         ?>
 
         
