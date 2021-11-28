@@ -92,6 +92,26 @@
         echo "<br/>O valor de $n1 arredondado e ".round($n1);//ceil e floor
         echo "<br/>A parte inteira de $n1 é ".intval($n1);
         echo "<br/>O formato de $n1 em moeda é RS".number_format($n1,2,",",".");
+
+        /*
+        adição          $a+=$b
+        subtração       $a-=$b
+        multiplicação   $a*=$b
+        divisão         $a/=$b
+        módulo          $a%=$b
+        concatenação    $a.=$b
+
+        a++
+        --a
+        a++
+        --a
+        */
+        $preco =$_GET['p'];
+        echo "<br> O preço recebido $preco";
+        $preco*=1.1;
+        echo "<br> O preço com 10% de aumento ".number_format($preco,2);
+        $preco*=0.9;
+        echo "<br> O preço com 10% de desconto ".number_format($preco,2);
         ?>
 
         
